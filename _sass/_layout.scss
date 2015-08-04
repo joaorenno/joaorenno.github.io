@@ -307,19 +307,26 @@
 
 /* Author block */
 
+.author-container {
+	position: relative;
+	overflow: auto;
+	margin-bottom: 5px;
+}
+
 .author-image {
-	position: absolute;
-	left: 0;
+	float: left;
+	margin-right: 10px;
 	img {
+		display: block;
 		width: 80px;
 		height: 80px;
-		border-radius: $border-radius;
+		border-radius: 50%;
 	}
 }
 .author-content {
 	word-wrap: break-word;
-	padding-left: 100px; //avatar width + 20px padding
-	min-height: 80px; //mirrors avatar height
+	//padding-left: 100px; //avatar width + 20px padding
+	//min-height: 80px; //mirrors avatar height
 }
 .author-name {
 	@include font-size(20,no);
